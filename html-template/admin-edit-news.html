@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+
+    <div id="content">
+        <form method="POST" action="/" class="jumbotron login-form content">
+            <div class="btn-group">
+                <a href="admin-list-news.html" class="btn btn-default">&laquo; Back</a>
+                <a href="admin-list-news.html" type="button" class="btn btn-default">Delete</a>
+                <a href="front-single.html" type="button" class="btn btn-default">View Post</a>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="article-title">Title</label>
+                        <input type="text" class="form-control" id="article-title" placeholder="Enter Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="article-content">Content</label>
+                        <textarea id="article-content" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="article-category">Category</label>
+                        <select id="article-category" class="form-control">
+                            <option value="">---</option>
+                            <option value="1">Category 1</option>
+                            <option value="2">Category 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="article-image">Image</label>
+                        <input type="file" id="article-image" name="article-image" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" title="Submit">
+            </div>
+        </form>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <ul>
+            <li class="btn navbar-btn">
+                <a href="index.html">Go To Frontend</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
