@@ -1,0 +1,54 @@
+{% extends "ExperimentsBlogBundle::admin-layout.html.twig" %} 
+
+{% block pageTitle %}Add/Edit Category{% endblock %} 
+
+{% block content %}
+<div class="row">
+    <nav class="sidebar col-lg-3">
+        <ul class="nav nav-pills nav-stacked">
+            <li>
+                <a href="{{ path('_admin_list_posts') }}">Posts</a>
+            </li>
+            <li class="active">
+                <a href="{{ path('_admin_categories') }}">Categories</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="col-lg-9">
+        <form method="post" class="form-inline clearfix" role="form">
+            <input type="text" name="categroy_name" placeholder="Category Name" class="form-control" />
+
+            <input type="submit" class="btn pull-right" value="Submit" />
+        </form>
+
+
+        <table class="news-list table table-hover table-bordered">
+            <tbody>
+                <tr>
+                    <td>Category Name 1</td>
+                    <td>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </a>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Category Name 2</td>
+                    <td>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </a>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

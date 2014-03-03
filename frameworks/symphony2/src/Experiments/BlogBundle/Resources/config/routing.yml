@@ -1,0 +1,15 @@
+experiments_blog_homepage:
+    pattern:  /
+    defaults: { _controller: ExperimentsBlogBundle:Index:index }
+        
+experiments_blog_category:
+    pattern:  /{categorySlug}.html
+    defaults: { _controller: ExperimentsBlogBundle:Index:category }
+    
+experiments_blog_single_post:
+    pattern:  /post/{postSlug}.html
+    defaults: { _controller: ExperimentsBlogBundle:Index:post }
+    
+_admin_secured:
+    resource: "@ExperimentsBlogBundle/Controller/AdministrationController.php"
+    type:     annotation

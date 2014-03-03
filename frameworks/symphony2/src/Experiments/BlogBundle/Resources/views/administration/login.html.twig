@@ -1,0 +1,22 @@
+{% extends "ExperimentsBlogBundle::admin-layout.html.twig" %} 
+
+{% block pageTitle %}Login to Administration{% endblock %}
+
+{% block content %}
+<form method="POST" action="admin-list-news.html" class="jumbotron login-form">
+    <div class="form-group">
+        <label for="exampleInputEmail">Email address</label>
+        <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+    </div>
+    <div class="button-group">
+        <a class="btn btn-primary" href="{{ path('_admin_list_posts') }}">Submit</a>
+    </div>
+</form>
+{% endblock %}
+
+
+{% block adminFoot %} {% endblock %}

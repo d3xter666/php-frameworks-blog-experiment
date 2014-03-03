@@ -1,0 +1,15 @@
+{
+    "authors": [
+        {
+            "email": "d3xter_666@yahoo.com",
+            "name": "Yavor Ivanov"
+        }
+    ],
+    "minimum-stability": "dev",
+    "name": "d3xter/Framewroks Experiment",
+    "require": {
+        "creativepioneers/wordpress": "dev-master"
+    },
+    "require-dev": {
+    }
+}

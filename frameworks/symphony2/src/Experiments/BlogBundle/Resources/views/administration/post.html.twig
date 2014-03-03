@@ -1,0 +1,43 @@
+{% extends "ExperimentsBlogBundle::admin-layout.html.twig" %} 
+
+{% block pageTitle %}Edit N{% endblock %} 
+
+{% block content %}
+<form method="POST" action="/" class="jumbotron login-form content">
+    <div class="btn-group">
+        <a href="{{ path('_admin_list_posts') }}" class="btn btn-default">&laquo; Back</a>
+        <a href="admin-list-news.html" type="button" class="btn btn-default">Delete</a>
+        <a href="{{ path('experiments_blog_single_post', {'postSlug': 'post-slug'}) }}" type="button" class="btn btn-default" target="_blank">View Post</a>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="article-title">Title</label>
+                <input type="text" class="form-control" id="article-title" placeholder="Enter Title">
+            </div>
+            <div class="form-group">
+                <label for="article-content">Content</label>
+                <textarea id="article-content" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label for="article-category">Category</label>
+                <select id="article-category" class="form-control">
+                    <option value="">---</option>
+                    <option value="1">Category 1</option>
+                    <option value="2">Category 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="article-image">Image</label>
+                <input type="file" id="article-image" name="article-image" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" title="Submit">
+    </div>
+</form>
+{% endblock %}
